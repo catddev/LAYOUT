@@ -4,15 +4,18 @@
 #include<math.h>
 #include<time.h>
 #include <Windows.h>
-#include <conio.h>
+#include <iostream>
+
+using namespace std;
 
 void main()
 {
-	setlocale(LC_ALL, "Rus");
-
 	srand(time(NULL));
 
+	setlocale(LC_ALL, "Rus");
+
 	HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
+	SetConsoleTextAttribute(hConsole, 15);
 
 	int tn = 0;
 
